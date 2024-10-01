@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Animais",
+    "depth": 1,
+    "parent": null
+  },
+  {
+    "title": "Mamiferos",
+    "depth": 2,
+    "parent": "Animais"
+  },
+  {
+    "title": "Carnivoros",
+    "depth": 3,
+    "parent": "Mamiferos"
+  },
+  {
+    "title": "Felinos",
+    "depth": 4,
+    "parent": "Carnivoros"
+  },
+  {
+    "title": "Leoes",
+    "depth": 5,
+    "parent": "Felinos"
+  },
+  {
+    "title": "Tigres",
+    "depth": 5,
+    "parent": "Felinos"
+  },
+  {
+    "title": "Jaguars",
+    "depth": 5,
+    "parent": "Felinos"
+  },
+  {
+    "title": "Leopardos",
+    "depth": 5,
+    "parent": "Felinos"
+  },
+  {
+    "title": "Herbivoros",
+    "depth": 3,
+    "parent": "Mamiferos"
+  },
+  {
+    "title": "Equideos",
+    "depth": 4,
+    "parent": "Herbivoros"
+  },
+  {
+    "title": "Cavalos",
+    "depth": 5,
+    "parent": "Equideos"
+  },
+  {
+    "title": "Zebras",
+    "depth": 5,
+    "parent": "Equideos"
+  },
+  {
+    "title": "Asnos",
+    "depth": 5,
+    "parent": "Equideos"
+  },
+  {
+    "title": "Aves",
+    "depth": 2,
+    "parent": "Animais"
+  },
+  {
+    "title": "Rapinas",
+    "depth": 3,
+    "parent": "Aves"
+  },
+  {
+    "title": "Aguias",
+    "depth": 4,
+    "parent": "Rapinas"
+  },
+  {
+    "title": "Falcoes",
+    "depth": 4,
+    "parent": "Rapinas"
+  },
+  {
+    "title": "Corujas",
+    "depth": 4,
+    "parent": "Rapinas"
+  },
+  {
+    "title": "Milhafres",
+    "depth": 4,
+    "parent": "Rapinas"
+  },
+  {
+    "title": "Pássaros",
+    "depth": 3,
+    "parent": "Aves"
+  },
+  {
+    "title": "Canários",
+    "depth": 4,
+    "parent": "Pássaros"
+  },
+  {
+    "title": "Papagaios",
+    "depth": 4,
+    "parent": "Pássaros"
+  },
+  {
+    "title": "Pardais",
+    "depth": 4,
+    "parent": "Pássaros"
+  },
+  {
+    "title": "Rouxinóis",
+    "depth": 4,
+    "parent": "Pássaros"
+  }
+]
