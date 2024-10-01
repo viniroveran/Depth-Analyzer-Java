@@ -25,7 +25,6 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String[] args) throws Exception {
-        logger.info("EXECUTING : Command Line Runner");
         // Define variables
         boolean valid_usage = true;
         boolean verbose = false;
@@ -34,14 +33,14 @@ public class Runner implements CommandLineRunner {
 
         // Check for valid usage
         if (args.length == 0 || !args[0].equals("analyze") || !args[1].equals("--depth") || args.length < 4 || args.length > 5) {
-            logger.info("invalid params?");
+            logger.error("Invalid params");
             valid_usage = false;
         } else {
             // Assign variables
             try {
                 depth = Integer.parseInt(args[2]);
             } catch (NumberFormatException e) {
-                logger.info("invalid number");
+                logger.error("Invalid depth");
                 valid_usage = false;
             }
 
@@ -51,7 +50,7 @@ public class Runner implements CommandLineRunner {
                 if (args[4].equals("--verbose")) {
                     verbose = true;
                 } else {
-                    logger.info("not verbose??");
+                    logger.info("Last argument is not --verbose");
                     valid_usage = false;
                 }
             }
@@ -87,7 +86,6 @@ public class Runner implements CommandLineRunner {
                     String parent = node.getParent();
                     List<TreeNode> parentNodes = new ArrayList<TreeNode>();
                     while (found_depth > 1) {
-                        logger.info(String.valueOf(found_depth));
                         for (TreeNode tn : treeNodeList) {
                             if ((tn.getTitle()).equalsIgnoreCase(parent)){
                                 parent = tn.getParent();
